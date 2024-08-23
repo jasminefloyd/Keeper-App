@@ -1,0 +1,194 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+
+/* Header */
+.appHeader {
+  display: flex;
+  background-color: #f5ba13;
+  width: 100%;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.appTitle {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  color: #fff;
+  height: 100%;
+  width: fit-content;
+  padding: 0 0 0 30px;
+  margin: 0;
+}
+
+
+/* Note Section */
+.noteContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%; /* Allow the container to take full width */
+  margin: 0 auto; /* Center the container itself */
+  justify-items: center; /* Center the notes within the container */
+}
+
+.appNote {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.noteTitle {
+  width: 240px;
+  height: 28px;
+  font-size: 18.3px;
+  margin: 10px 0 0 0;
+}
+
+.noteContent {
+  width: 240px;
+  height: 100%;
+  font-size: 17.6px;
+  margin: 10px 0 20px 0;
+}
+
+
+
+/* Form Section */
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Footer Section */
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appHeader {
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .appTitle {
+    font-size: 1.8em;
+    padding: 0;
+  }
+
+  .noteContainer {
+    padding-left: 20px;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appNote {
+    width: 90%;
+    margin: 15px;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  form button {
+    right: 10px;
+    bottom: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appHeader {
+    padding: 10px;
+  }
+
+  .appTitle {
+    font-size: 1.5em;
+  }
+
+  .noteContainer {
+    padding-left: 10px;
+    margin: 5px;
+  }
+
+  .appNote {
+    width: 100%;
+    margin: 10px;
+  }
+
+  form {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  form button {
+    right: 5px;
+    bottom: -5px;
+    width: 32px;
+    height: 32px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
