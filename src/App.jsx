@@ -10,9 +10,7 @@ function App() {
     <div>
       <Header />
       <CreateArea />
-      <div className="noteContainer">
-        <Note key={1} title="Note title" content="Note content" /> 
-      </div>
+      <Note key={1} title="Note title" content="Note content" /> 
       <Footer /> 
     </div>
   );

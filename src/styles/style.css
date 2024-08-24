@@ -33,13 +33,13 @@ html, body {
 
 /* Note Section */
 .noteContainer {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  gap: 25px;
+  flex-direction: column;
+  float: left;
   flex-wrap: wrap;
-  width: 100%; /* Allow the container to take full width */
-  margin: 0 auto; /* Center the container itself */
-  justify-items: center; /* Center the notes within the container */
+  
 }
 
 .appNote {
@@ -107,10 +107,10 @@ form button {
 
 /* Footer Section */
 footer {
-  position: absolute;
+  position: fixed;
   text-align: center;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-top: 50px;
   width: 100%;
   height: 2.5rem;
 }
@@ -134,15 +134,16 @@ footer p {
   }
 
   .noteContainer {
-    padding-left: 20px;
-    margin: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 5px 0px 0px 13px;
   }
 
   .appNote {
-    width: 90%;
-    margin: 15px;
+    width: 100%;
+    margin: 5px;
   }
 
   form {
@@ -154,9 +155,14 @@ footer p {
     right: 10px;
     bottom: -10px;
   }
+
+  footer {
+    font-size: 0.8em;
+    position: absolute;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .appHeader {
     padding: 10px;
   }
@@ -166,29 +172,34 @@ footer p {
   }
 
   .noteContainer {
-    padding-left: 10px;
-    margin: 5px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px 0px 13px;
   }
 
   .appNote {
-    width: 100%;
-    margin: 10px;
+    width: 95%;
+    margin: 5px;
   }
 
   form {
-    width: 100%;
+    width: 85%;
     margin: 15px auto;
     padding: 10px;
   }
 
   form button {
     right: 5px;
-    bottom: -5px;
-    width: 32px;
-    height: 32px;
+    bottom: -10px;
+    width: 35px;
+    height: 35px;
+    padding-left: 4px;
   }
 
   footer {
     font-size: 0.8em;
+    position: fixed;
   }
 }
